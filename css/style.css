@@ -13,3 +13,41 @@ body,html {
     -moz-text-size-adjust: 100%;
     background-color: #edf2f9 !important;
 }
+
+.toggle-icon-wrapper {
+   
+}
+
+.navbar-toggle-icon {
+    width: 100%;
+    position: relative;
+    transition: all .2s ease-in-out;
+    display: block;
+    padding-right: 0;
+}
+.navbar-toggle-icon .toggle-line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+    background-color: #5e6e82;
+}
+
+.navbar-toggle-icon:before, .navbar-toggle-icon:after {
+    content: "";
+    position: absolute;
+    transition: all .2s ease-in-out;
+    background-color: #5e6e82;
+    display: block;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+    height: 3px;
+    width: 100%;
+}
+.navbar-toggle-icon:before {
+    top: 0;
+}
+.navbar-toggle-icon:before {
+    bottom: 0;
+}
